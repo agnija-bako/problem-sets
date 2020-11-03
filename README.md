@@ -1,5 +1,5 @@
 # problem-sets
-This a repository with solutions to the exercises in the Harvard computer science course I've taken. Languages used in the solutions are C and Python.
+This a repository with solutions to the exercises in the [Harvard computer science course I've taken](https://www.edx.org/course/cs50s-introduction-to-computer-science). Languages used in the solutions are C and Python.
 
 
 ## 01 
