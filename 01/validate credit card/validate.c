@@ -3,6 +3,8 @@
 
 // Validate credit card using Luhn’s Algorithm and determine whether it's a VISA, Mastercard or Amex
 
+//SOLUTION
+
 int main(void)
 {
 

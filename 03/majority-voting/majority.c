@@ -5,7 +5,9 @@
 
 // Implement a solution that runs a relative/simple majority voting (plurality-voting) election
 
-//SOLUTION
+//CODE PROVIDED IN THE TASK
+
+//------------------------------------------------------------------------------------------
 
 // Max number of candidates
 #define MAX 9
@@ -33,7 +35,7 @@ int main(int argc, string argv[])
     // Check for invalid usage
     if (argc < 2)
     {
-        printf("Usage: plurality [candidate ...]\n");
+        printf("Usage: majority [candidate ...]\n");
         return 1;
     }
 
@@ -67,6 +69,10 @@ int main(int argc, string argv[])
     // Display winner of election
     print_winner();
 }
+
+//-------------------------------------------------------------------------------
+
+//SOLUTION
 
 // Update vote totals given a new vote
 bool vote(string name)

@@ -4,6 +4,8 @@
 
 // Return a minimum number of coins to be returned as change to the user
 
+// SOLUTION
+
 int main(void)
 {
     //Get user input
