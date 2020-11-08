@@ -14,12 +14,11 @@ Using Luhns alogorithm provided in the problem and a specification how to identi
 ### reading-level
 Using the The Coleman-Liau index, after taking an input of a text the program outputs the reading level of a given text. 
 
-Examples:
-Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!
-Grade 3
-
-Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.
-Grade 5
+Examples:<br/>
+`Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!`<br/>
+`Grade 3` <br/>
+`Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.`<br/>
+`Grade 5`
 
 ### shift-cipher
 Using a shift-cipher or (Caesar cipher), after taking an input of a text and a key, the program outputs and encrypted version of that text.
@@ -36,28 +35,29 @@ Examples:<br/>
 ### substitution-cipher
 Using a substitution-cipher, after taking an input of a text and a key, the program outputs and encrypted version of that text.
 
-Examples:
-./sub YTNSHKVEFXRBAUQZCLWDMIPGJO
-plaintext:  HELLO
-ciphertext: EHBBQ
+Examples:<br/>
+`./sub YTNSHKVEFXRBAUQZCLWDMIPGJO`<br/>
+`plaintext:  HELLO`<br/>
+`ciphertext: EHBBQ`
 
-./sub VCHPRZGJNTLSKFBDQWAXEUYMOI
-plaintext:  hello, world
-ciphertext: jrssb, ybwsp
+`./sub VCHPRZGJNTLSKFBDQWAXEUYMOI`<br/>
+`plaintext:  hello, world`<br/>
+`ciphertext: jrssb, ybwsp`
 
 ## 03 - C
 ### majority-voting
 Using the plurality method, determine who is the winner of the election. The winner is determined by a majority vote - every voter gets one vote, and the candidate with the most votes wins. 
 Note: the solution in the code starts under //SOLUTION.
 
-Example
-./majority Alice Bob Charlie
-Number of voters: 4
-Vote: Alice
-Vote: Bob
-Vote: Charlie
-Vote: Alice
-Alice
+
+Examples:<br/>
+`./majority Alice Bob Charlie`<br/>
+`Number of voters: 4`<br/>
+`Vote: Alice`<br/>
+`Vote: Bob`<br/>
+`Vote: Charlie`<br/>
+`Vote: Alice`<br/>
+`Alice`
 
 ### ranked-choice voting
 Unlike majority-voting in a ranked-choice system, voters can vote for more than one candidate. Instead of just voting for their top choice, they can rank the candidates in order of preference. If any candidate has a majority (more than 50%) of the first preference votes, that candidate is declared the winner of the election. 
@@ -66,30 +66,29 @@ If no candidate has a majority of the votes, the last place candidate is elimina
 
 The solution accepts user input of voter number, candidates in their ranked preferences and in the end outputs the winner of the election.
 
-Example:
-./ranked Alice Bob Charlie
-Number of voters: 5
-Rank 1: Alice
-Rank 2: Bob
-Rank 3: Charlie
-
-Rank 1: Alice
-Rank 2: Charlie
-Rank 3: Bob
-
-Rank 1: Bob
-Rank 2: Charlie
-Rank 3: Alice
-
-Rank 1: Bob
-Rank 2: Alice
-Rank 3: Charlie
-
-Rank 1: Charlie
-Rank 2: Alice
-Rank 3: Bob
-
-Alice
+Examples:<br/>
+`./ranked Alice Bob Charlie`<br/>
+`Number of voters: 5`<br/>
+`Rank 1: Alice`<br/>
+`Rank 2: Bob`<br/>
+`Rank 3: Charlie`<br/>
+<br/>
+`Rank 1: Alice`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Bob`<br/>
+<br/>
+`Rank 1: Bob`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Alice`<br/>
+<br/>
+`Rank 1: Bob`<br/>
+`Rank 2: Alice`<br/>
+`Rank 3: Charlie`<br/>
+<br/>
+`Rank 1: Charlie`<br/>
+`Rank 2: Alice`<br/>
+`Rank 3: Bob`<br/>
+`Alice`
 
 ### ranked-pairs - voting
 In this problem the task is to use the Tideman alternative method of voting. The Tideman voting method (also known as “ranked pairs”) is a ranked-choice voting method that’s guaranteed to produce the Condorcet winner of the election if one exists. 
@@ -100,27 +99,26 @@ Looking at this graph, the Tideman method says the winner of the election should
 #### Input and output of the solution:
 The solution accepts user input of voter number, candidates in their ranked preferences and in the end outputs the winner of the election.
 
-Example:
-./pairs Alice Bob Charlie
-Number of voters: 5
-Rank 1: Alice
-Rank 2: Charlie
-Rank 3: Bob
-
-Rank 1: Alice
-Rank 2: Charlie
-Rank 3: Bob
-
-Rank 1: Bob
-Rank 2: Charlie
-Rank 3: Alice
-
-Rank 1: Bob
-Rank 2: Charlie
-Rank 3: Alice
-
-Rank 1: Charlie
-Rank 2: Alice
-Rank 3: Bob
-
-Charlie
+Examples:<br/>
+`./ranked Alice Bob Charlie`<br/>
+`Number of voters: 5`<br/>
+`Rank 1: Alice`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Bob`<br/>
+<br/>
+`Rank 1: Alice`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Bob`<br/>
+<br/>
+`Rank 1: Bob`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Alice`<br/>
+<br/>
+`Rank 1: Bob`<br/>
+`Rank 2: Charlie`<br/>
+`Rank 3: Alice`<br/>
+<br/>
+`Rank 1: Charlie`<br/>
+`Rank 2: Alice`<br/>
+`Rank 3: Bob`<br/>
+`Alice`
