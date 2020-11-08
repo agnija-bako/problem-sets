@@ -9,7 +9,7 @@ In coins a user provides an amount of money that is owed and the solutions finds
 ### validate credit card:
 Using Luhns alogorithm provided in the problem and a specification how to identify whether the card is a VISA card, Mastercard or AMEX, the solutions checks if the card number provided by the user is valid and identifies which card it is.
 
-## 02 - C
+## 02 Arrays - C
 
 ### reading-level
 Using the The Coleman-Liau index, after taking an input of a text the program outputs the reading level of a given text. 
@@ -44,10 +44,9 @@ Examples:<br/>
 `plaintext:  hello, world`<br/>
 `ciphertext: jrssb, ybwsp`
 
-## 03 - C
+## 03 Algorithms - C
 ### majority-voting
 Using the plurality method, determine who is the winner of the election. The winner is determined by a majority vote - every voter gets one vote, and the candidate with the most votes wins. 
-Note: the solution in the code starts under //SOLUTION.
 
 
 Examples:<br/>
@@ -121,4 +120,58 @@ Examples:<br/>
 `Rank 1: Charlie`<br/>
 `Rank 2: Alice`<br/>
 `Rank 3: Bob`<br/>
-`Alice`
+`Charlie`
+## 04 Memory - C
+### Photo filters
+The task is to implement a program that applies the following filters to BMPs:
+- Grayscale
+- Reflection
+- Blur - using the “box blur” method
+- Edges - detect edges of the image by applying the Sobel operator.
+Find the solution in - helpers.c
+### Restore
+The task is to implement a program that recovers JPEGs from a forensic image. A card.raw is provided.
+## 05 Data structures - C
+### spell-check
+The task is to implement a program that spell-checks a file using a hash table. The solution takes a text as an input and after checking it against the dictionary outputs any misspellings found in that text.
+
+## 06 - Python
+Tasks - **coins**, **reading-level** and **validate credit card** are exactly the same as in C above, but written in Python. 
+
+### DNA-sequences
+The task is to implement a program that identifies a person based on their DNA.
+Provided in the task we have a DNA database, that looks something like this:<br/>
+`name,AGAT,AATG,TATC`<br/>
+`Alice,28,42,14`<br/>
+`Bob,17,22,19`<br/>
+`Charlie,36,18,25`<br/>
+#### How does it work:
+"AGAT" "AATG" and "TATC" are Short Tandem Repeats of the DNA or STRs. An STR is a short sequence of DNA bases(adenine (A), cytosine (C), guanine (G), or thymine (T)) that tends to repeat consecutively numerous times at specific locations inside of a person’s DNA. The number of times any particular STR repeats varies a lot among individuals. The solution uses all the provided STRs in the DNA database and looks for an exact person match of all combinations.
+#### Input and output
+The program accepts 2 files as an input - the dna database, and the sequence of DNA of a particular person. The output is the person match in the database. 
+
+Example:<br/>
+`python seq.py databases/large.csv sequences/5.txt`<br/>
+`Lavender`<br/>
+
+## 07 SQL - Python
+The task is to implement a program to import student data into a database, and then produce class rosters.
+The program accepts csv as an input and imports the student list from a csv file into SQLite database. After the data is imported, the program queries and prints all students in the database alphabetically based on their house.
+
+Example<br/>
+`$ python import.py characters.csv`<br/>
+`$ python roster.py Gryffindor`<br/>
+`Lavender Brown, born 1979`<br/>
+`Colin Creevey, born 1981`<br/>
+`Seamus Finnigan, born 1979`<br/>
+`Hermione Jean Granger, born 1979`<br/>
+`Neville Longbottom, born 1980`<br/>
+`Parvati Patil, born 1979`<br/>
+`Harry James Potter, born 1980`<br/>
+`Dean Thomas, born 1980`<br/>
+`Romilda Vane, born 1981`<br/>
+`Ginevra Molly Weasley, born 1981`<br/>
+`Ronald Bilius Weasley, born 1980`<br/>
+
+
+
