@@ -24,13 +24,13 @@ Grade 5
 ### shift-cipher
 Using a shift-cipher or (Caesar cipher), after taking an input of a text and a key, the program outputs and encrypted version of that text.
 
-Examples:
-`./shift 1
-plaintext:  HELLO`<br/>
+Examples:<br/>
+`./shift 1`<br/>
+`plaintext:  HELLO`<br/>
 `ciphertext: IFMMP`
 
-`./shift 13
-plaintext:  hello, world`<br/>
+`./shift 13`<br/>
+`plaintext:  hello, world`<br/>
 `ciphertext: uryyb, jbeyq`
 
 ### substitution-cipher
